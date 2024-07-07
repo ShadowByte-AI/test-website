@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+body{
+    font-family: 'Montserrat',sans-serif;
+    background-color: #000;
+    color: white;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Exo',sans-serif;
+    text-align: center;
+}
+
+.hero-wrapper{
+    position: relative;
+    height: 100vh;
+    width: 100vw;   
+}
+
+.hero-bg{
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 25%, rgb(0 0 0 / 57%) 50%, rgb(0 0 0) 75%, rgba(0, 0, 0, 1) 100%), url('https://cdn.mos.cms.futurecdn.net/iuQmVPLBRbmRQeoA46VTZ6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-attachment: fixed;
+}
+
+.hero-text h2{
+    font-size: 5rem;
+    font-family: "Exo", sans-serif;
+    background: radial-gradient(ellipse at top, #303030, #7a7a7a, #e0e0e0, #f7f7f7, #e0e0e0, #686868, #343434);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: shine 10s linear infinite;
+    animation: shine 10s linear infinite;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@-webkit-keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.intro-p{  
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.258);
+    letter-spacing: 1px;
+    padding: 1rem 1.3rem;
+    line-height: 1.75;
+}
+
+/* .glow-image-container{
+    position: relative;
+    width: 100vw;
+    height: 20vh;   
+}
+.section_glow-image-wrapper {
+    width: 100vw;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    transform: rotate(180deg);
+} */
+
+.services{
+margin: 3rem auto 1rem;
+position: relative;
+}
+
+.section-gradient{
+    width: 100vw;
+    height: 10rem;
+    background: linear-gradient(to bottom, #000, #00000000 100%);
+    position: absolute;
+}
+
+.services h2{
+    font-size: 2rem;
+    font-family: "Exo", sans-serif;
+    background: linear-gradient(358deg, #303030, #7a7a7a, #e0e0e0, #f7f7f7, #e0e0e0, #686868, #343434);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.card-bg-container{
+    position: relative;
+    z-index: -1;
+}
+
+.cards-container{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex; /* Use flexbox to align cards horizontally */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enable scroll snap in the horizontal direction */
+    gap: 1rem; /* Add some space between cards */
+    padding: 1rem; /* Add padding if necessary */
+    width: 100%; /* Make the container full width */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.card{
+    flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+    scroll-snap-align: center; /* Center align cards when snapping */
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 2rem 1rem;
+    row-gap: 2rem;
+    width: 100vw; /* Set a fixed width for the cards */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.card .card-body p{
+    text-align: center;
+}
+
+.button {
+    cursor: pointer;
+    padding: 1em;
+    font-size: 1em;
+    width: 8em;
+    aspect-ratio: 1 / 0.25;
+    color: white;
+    background: #21212100;
+    background-size: cover;
+    background-blend-mode: overlay;
+    border-radius: 0.5em;
+    outline: 0.1em solid #353535;
+    border: 0;
+    box-shadow: 0 0 1em 1em rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    position: relative; 
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1em 0.45em rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #21212100, #25252500);
+    background: radial-gradient(circle at bottom, rgb(50 100 180 / 72%) 10%, #21212100 70%);
+    outline: 0 solid white;
+  }
+  
