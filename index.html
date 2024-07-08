@@ -9,15 +9,41 @@
     <meta http-equiv="Expires" content="0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/card-bg.css">
+    <link rel="stylesheet" href="css/start-animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://kit.fontawesome.com/67776014ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/slider.css">
+    <link rel="stylesheet" href="css/glow-card.css">
+    <link rel="stylesheet" href="css/change-tab.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 </head>
 <body>
-    <div class="hero-wrapper">
-        <div class="hero-bg">
-
+<div class="welcome-wrapper">
+    <div class="welcome">
+        <div class="welcome-img"><svg width="91" height="90" viewBox="0 0 91 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="welcome-img" d="M17.277 90L-0.00300001 72.72C-0.00300001 54.672 -0.00300001 36.624 -0.00300001 18.576L18.557 0.271996H18.941C36.733 0.271996 54.525 0.271996 72.445 0.271996L90.749 18.576V72.72L73.469 90H70.013L52.733 72.72V38.416H38.141V72.72L20.861 90H17.277ZM19.453 88.848L36.349 71.952V37.136H19.453V88.848ZM54.013 36.624V19.6H36.733L19.837 36.624H54.013ZM72.061 2.448V88.848L88.957 71.952V19.6L72.061 2.448ZM71.421 88.848V2.448L54.525 19.6V71.952L71.421 88.848ZM71.165 2.064H19.837L36.733 18.96H54.013L71.165 2.064ZM19.069 2.19199L1.917 19.344L19.069 36.496L36.221 19.344L19.069 2.19199ZM1.789 20.112V71.952L18.941 88.848V37.008L1.789 20.112Z" fill="white"/>
+            </svg></div>
+        <div class="welcome-text">
+            <p><span>Empowering</span> <span>Your</span> <span>Vision</span></p>
+            <p><span>with</span> <span>Web3</span> <span>Solutions</span></p>
         </div>
+    </div>
+</div>
+
+
+    <div class="hero-wrapper">
+        <div class="starsBackground">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </div>
+        <!-- <div class="hero-bg"></div> -->
+         <div class="logo-img"><img src="/img/logo.png" alt=""></div>
 
         <div class="hero-text"><h2>NebullX</h2></div>
+        <div class="section-gradient"></div>
     </div>
     <div class="intro-p">
         <p>
@@ -31,111 +57,501 @@
         </div>
     </div> -->
 
-<div class="services">
-    <div class="section-gradient"></div>
-    <!-- <h2>Services</h2> -->
-     <div class="card-bg-container">
-        <div class="card-bg-wrapper">
-            <section class='wrapper'>
-                <div class='card-anim-wall'>
-                </div>
-                <div class='content'>
-                  <!-- <h1 class='h1--scalingSize' data-text='An awesome title'>An awesome title</h1> -->
-                  <input type='checkbox' id='switch' checked>
-                  <!-- <label for='switch'><span><span class='icon'>→</span> switch bg</span></label> -->
-                </div>
-              </section>
-        </div>
-     </div>
 
-    <div class="cards-container">
-        <div class="card">
-            <div class="heading"><h3>Token Development</h3></div>
-            <div class="card-body">
-                <p>
-                    Create versatile and secure tokens tailored to your project's unique requirements and objectives.
-                </p>
-            </div>
-            <button class="button">Learn More</button>
-        </div>
-        <div class="card">
-            <div class="heading"><h3>Blockchain Development</h3></div>
-            <div class="card-body">
-                <p>
-                    Customized blockchain solutions to revolutionize your business processes with enhanced security and efficiency.
-                </p>
-            </div>
-            <button class="button">Learn More</button>
-        </div>
-        <div class="card">
-            <div class="heading"><h3>NFT Development</h3></div>
-            <div class="card-body">
-                <p>
+    <div class="services-wrapper">
+        <div class="glide hero-example">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><div class="services-card">
+                    <div class="heading"><h2>Token<br>Development</h2></div>
+                    <div class="service-img"><img src="/img/ethereum.png" alt=""></div>
+                    <div class="card-text">
+                        <p>
+                        Create versatile and secure tokens tailored to your project's unique requirements and objectives.
+                        </p>
+                    </div>
+                    <div class="services-button">
+                        <a class="animated-button">
+                            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                            </svg>
+                            <span class="text">Go</span>
+                            <span class="circle"></span>
+                            &nbsp;&nbsp;
+                            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                            </svg>
+                        </a>
+                          
+                    </div>
+                    </div></li>
+                <li class="glide__slide"><div class="services-card">
+                    <div class="heading"><h2>Blockchain<br>Development</h2></div>
+                    <div class="service-img"><img src="/img/ethereum.png" alt=""></div>
+                    <div class="card-text">
+                        <p>
+                            Customized blockchain solutions to revolutionize your business processes with enhanced security and efficiency.
+                        </p>
+                    </div>
+                    <div class="services-button">
+                        <a class="animated-button">
+                            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                            </svg>
+                            <span class="text">Go</span>
+                            <span class="circle"></span>
+                            &nbsp;&nbsp;
+                            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                            </svg>
+                        </a>
+                          
+                    </div>
+                    </div></li>
+                <li class="glide__slide"><div class="services-card">
+                    <div class="heading"><h2>NFT<br>Development</h2></div>
+                    <div class="service-img"><img src="/img/ethereum.png" alt=""></div>
+                    <div class="card-text">
+                        <p>
+                        
                     Transform digital assets into unique, tradeable NFTs with our innovative development services.
-                </p>
-            </div>
-            <button class="button">Learn More</button>
-        </div>
-        <div class="card">
-            <div class="heading"><h3>RWA Tokenization</h3></div>
-            <div class="card-body">
-                <p>
-                    Convert real-world assets into blockchain-based tokens, enhancing liquidity and accessibility while maintaining regulatory compliance.
-                </p>
-            </div>
-            <button class="button">Learn More</button>
-        </div>
-        <div class="card">
-            <div class="heading"><h3>Smart Contract Audit</h3></div>
-            <div class="card-body">
-                <p>
-                    Ensure the integrity and security of your smart contracts with our comprehensive auditing services.
-                </p>
-            </div>
-            <button class="button">Learn More</button>
-        </div>
-        <div class="card">
-            <div class="heading"><h3>Custom Trading Bot</h3></div>
-            <div class="card-body">
-                <p>
+                
+                        </p>
+                    </div>
+                    <div class="services-button">
+                        <a class="animated-button">
+                            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                            </svg>
+                            <span class="text">Go</span>
+                            <span class="circle"></span>
+                            &nbsp;&nbsp;
+                            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                            </svg>
+                        </a>
+                          
+                    </div>
+                    </div></li>
+                <li class="glide__slide"><div class="services-card">
+                    <div class="heading"><h2>RWA<br>Tokenisation</h2></div>
+                    <div class="service-img"><img src="/img/ethereum.png" alt=""></div>
+                    <div class="card-text">
+                        <p>
+                            Convert real-world assets into blockchain-based tokens, enhancing liquidity and accessibility while maintaining regulatory compliance.
+
+                        </p>
+                    </div>
+                    <div class="services-button">
+                        <a class="animated-button">
+                            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                            </svg>
+                            <span class="text">Go</span>
+                            <span class="circle"></span>
+                            &nbsp;&nbsp;
+                            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                            </svg>
+                        </a>
+                          
+                    </div>
+                    </div></li>
+
+                    <li class="glide__slide"><div class="services-card">
+                        <div class="heading"><h2>Smart Contract<br>Audit</h2></div>
+                        <div class="service-img"><img src="/img/ethereum.png" alt=""></div>
+                        <div class="card-text">
+                            <p>
+                                Ensure the integrity and security of your smart contracts with our comprehensive auditing services.
+
+    
+                            </p>
+                        </div>
+                        <div class="services-button">
+                            <a class="animated-button">
+                                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                  ></path>
+                                </svg>
+                                <span class="text">Go</span>
+                                <span class="circle"></span>
+                                &nbsp;&nbsp;
+                                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                  ></path>
+                                </svg>
+                            </a>
+                              
+                        </div>
+                        </div></li>
+
+                        <li class="glide__slide"><div class="services-card">
+                            <div class="heading"><h2>Custom<br>Trading Bot</h2></div>
+                            <div class="service-img"><img src="/img/ethereum.png" alt=""></div>
+                            <div class="card-text">
+                                <p>
+                                    
                     Develop bespoke trading bots tailored to your strategy, automating trades with advanced algorithms for optimized performance and profitability.
-                </p>
-            </div>
-            <button class="button">Learn More</button>
-        </div>
-        <div class="card">
-            <div class="heading"><h3>DApp Development</h3></div>
-            <div class="card-body">
-                <p>
+                
+        
+                                </p>
+                            </div>
+                            <div class="services-button">
+                                <a class="animated-button">
+                                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                      ></path>
+                                    </svg>
+                                    <span class="text">Go</span>
+                                    <span class="circle"></span>
+                                    &nbsp;&nbsp;
+                                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                      ></path>
+                                    </svg>
+                                </a>
+                                  
+                            </div>
+                            </div></li>
+
+                            <li class="glide__slide"><div class="services-card">
+                                <div class="heading"><h2>DApp<br>Development</h2></div>
+                                <div class="service-img"><img src="/img/ethereum.png" alt=""></div>
+                                <div class="card-text">
+                                    <p>
+                                       
                     Build decentralized applications that offer enhanced security, transparency, and functionality.
-                </p>
-            </div>
-            <button class="button">Learn More</button>
-        </div>
-        <div class="card">
-            <div class="heading"><h3>Wallet Development</h3></div>
-            <div class="card-body">
-                <p>
+                
+            
+                                    </p>
+                                </div>
+                                <div class="services-button">
+                                    <a class="animated-button">
+                                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                          ></path>
+                                        </svg>
+                                        <span class="text">Go</span>
+                                        <span class="circle"></span>
+                                        &nbsp;&nbsp;
+                                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                          ></path>
+                                        </svg>
+                                    </a>
+                                      
+                                </div>
+                                </div></li>
+
+                                <li class="glide__slide"><div class="services-card">
+                                    <div class="heading"><h2>Wallet<br>Development</h2></div>
+                                    <div class="service-img"><img src="/img/ethereum.png" alt=""></div>
+                                    <div class="card-text">
+                                        <p>
+                                            
                     Develop secure and user-friendly cryptocurrency wallets for seamless transactions and storage.
-                </p>
-            </div>
-            <button class="button">Learn More</button>
-        </div>
-        <div class="card">
-            <div class="heading"><h3>DEX and CEX Launching</h3></div>
-            <div class="card-body">
-                <p>
+                
+                
+                                        </p>
+                                    </div>
+                                    <div class="services-button">
+                                        <a class="animated-button">
+                                            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                              <path
+                                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                              ></path>
+                                            </svg>
+                                            <span class="text">Go</span>
+                                            <span class="circle"></span>
+                                            &nbsp;&nbsp;
+                                            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                              <path
+                                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                              ></path>
+                                            </svg>
+                                        </a>
+                                          
+                                    </div>
+                                    </div></li>
+
+                                    <li class="glide__slide"><div class="services-card">
+                                        <div class="heading"><h2>DEX & CEX<br>Launch</h2></div>
+                                        <div class="service-img"><img src="/img/ethereum.png" alt=""></div>
+                                        <div class="card-text">
+                                            <p>
+                                                
                     Launch your cryptocurrency on top decentralized (DEX) and centralized (CEX) exchanges with ease.
-                </p>
+                
+                    
+                                            </p>
+                                        </div>
+                                        <div class="services-button">
+                                            <a class="animated-button">
+                                                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                                  <path
+                                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                                  ></path>
+                                                </svg>
+                                                <span class="text">Go</span>
+                                                <span class="circle"></span>
+                                                &nbsp;&nbsp;
+                                                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                                  <path
+                                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                                  ></path>
+                                                </svg>
+                                            </a>
+                                              
+                                        </div>
+                                        </div></li>
+              </ul>
             </div>
-            <button class="button">Learn More</button>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--prev glide-slider-buttons" data-glide-dir="<">
+                <
+              </button>
+              <button class="glide__arrow glide__arrow--next glide-slider-buttons" data-glide-dir=">">
+                >
+              </button> 
+            </div>
+          </div>
+          <a href="#section1" class="page-down-button" >
+            <
+          </a>
+    </div>
+<br><br><br><br><br>
+    <div class="buy-crypto-section" id="section1">
+        <div class="card-container">
+            <article data-glow>
+              <div data-glow></div>
+              <div class="buy-crypto-card">
+                <div class="heading"><h2>Bitcoin</h2></div>
+                <div class="crypto-img">           
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/800px-Bitcoin.svg.png" alt="" class="img">
+                </div>
+                <div class="crypto-text">
+                    <span>MKT Cap: 1.215T</span>
+                    <p class="text price">Price: 1.654,34$</p>
+                </div>
+                <div class="buy-btn">                    
+                    <div class="services-button">
+                        <a class="animated-button">
+                            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                            ></path>
+                            </svg>
+                            <span class="text">&nbsp;Buy Now</span>
+                            <span class="circle"></span>
+                            &nbsp;&nbsp;
+                            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                            ></path>
+                            </svg>
+                        </a>
+                    </div>
+               </div>
+              </div>
+            </article>
+            <article data-glow>
+                <div data-glow></div>
+                <div class="buy-crypto-card">
+                  <div class="heading"><h2>Ethereum</h2></div>
+                  <div class="crypto-img">           
+                       <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="" class="img">
+                  </div>
+                  <div class="crypto-text">
+                      <span>MKT Cap: 413.9 B</span>
+                      <p class="text price">Price: 1.654,34$</p>
+                  </div>
+                  <div class="buy-btn">                    
+                      <div class="services-button">
+                          <a class="animated-button">
+                              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                              </svg>
+                              <span class="text">&nbsp;Buy Now</span>
+                              <span class="circle"></span>
+                              &nbsp;&nbsp;
+                              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                              </svg>
+                          </a>
+                      </div>
+                 </div>
+                </div>
+              </article>
+              <article data-glow>
+                <div data-glow></div>
+                <div class="buy-crypto-card">
+                  <div class="heading"><h2>Ripple (XRP)</h2></div>
+                  <div class="crypto-img">           
+                       <img src="https://seeklogo.com/images/X/xrp-xrp-logo-CBBF77A5CF-seeklogo.com.png" alt="" class="img">
+                  </div>
+                  <div class="crypto-text">
+                      <span>MKT Cap: 26B</span>
+                      <p class="text price">Price: 1.654,34$</p>
+                  </div>
+                  <div class="buy-btn">                    
+                      <div class="services-button">
+                          <a class="animated-button">
+                              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                              </svg>
+                              <span class="text">&nbsp;Buy Now</span>
+                              <span class="circle"></span>
+                              &nbsp;&nbsp;
+                              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                              </svg>
+                          </a>
+                      </div>
+                 </div>
+                </div>
+              </article>
+              <article data-glow>
+                <div data-glow></div>
+                <div class="buy-crypto-card">
+                  <div class="heading"><h2>Solana (SOL)</h2></div>
+                  <div class="crypto-img">           
+                       <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Solana_logo.png" alt="" class="img">
+                  </div>
+                  <div class="crypto-text">
+                      <span>MKT Cap: 68.5B</span>
+                      <p class="text price">Price: 1.654,34$</p>
+                  </div>
+                  <div class="buy-btn">                    
+                      <div class="services-button">
+                          <a class="animated-button">
+                              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                              </svg>
+                              <span class="text">&nbsp;Buy Now</span>
+                              <span class="circle"></span>
+                              &nbsp;&nbsp;
+                              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                              </svg>
+                          </a>
+                      </div>
+                 </div>
+                </div>
+              </article>    
         </div>
     </div>
+
+
+    <div class="features">
+        <div class="changing-tab">
+            <div class="slider-bg"></div>
+            <button class="tab-button" data-target="card1">RWA</button>
+            <button class="tab-button" data-target="card2">Crypto</button>
+        </div>
+        <div class="fcard" id="card1">
+            <div class="card-heading"><h2>RWA Tokenisation</h2></div>
+            <div class="card-content">
+                <p>Secure Asset Management</p>
+                <p>Fractional Ownership</p>
+                <p>Real-Time Asset Valuation</p>
+                <p>Enhanced Liquidity</p>
+                <p>Global Market Access</p>
+                <p>Better Investment Opportunities</p>
+            </div>
+            <div class="feature-button">Build Token</div>
+        </div>
+        <div class="fcard" id="card2">
+            <div class="card-heading"><h2>Crypto Token</h2></div>
+            <div class="card-content">
+                <p>Secure and Scalable</p>
+                <p>Whitepaper Development</p>
+                <p>Compliance with Standards</p>
+                <p>Technical Support and Maintenance</p>
+                <p>Roadmap Development</p>
+                <p>Tokenomics Design</p>
+            </div>
+            <div class="feature-button">Build Token</div>
+        </div>
+    </div>
+    
+    
+    
+<div class="footer">
+    <div class="section-gradient"></div>
+    <div class="footer-wrapper">
+        <div class="footer-content">
+            <div class="logo"><h2>NebullX</h2></div>
+            <div class="links">
+                <a href="#">About</a>
+                <a href="#">News</a>
+                <a href="#">Affiliate</a>
+                <a href="#">Attributions</a>
+            </div>
+        </div>
+        <div class="copyright"><p>All Rights Reserved 2024</p></div>
+    </div>
 </div>
+
+
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 <script src="js/gsapAnimation.js"></script>
+<script src="js/welcome.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    var glideHero = new Glide('.hero-example', {
+  type: 'carousel',
+  animationDuration: 500,
+  autoplay: 100000000,
+  focusAt: '1',
+  startAt: 3,
+  perView: 1, 
+});
+
+glideHero.mount();
+</script>
+
+<script src="js/glow-card.js"></script>
+<script src="js/change-tab.js"></script>
 </body>
 </html> 

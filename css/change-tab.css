@@ -1,0 +1,88 @@
+.features {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto 2rem;
+}
+
+.changing-tab {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    width: fit-content;
+}
+
+.slider-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(60% - 1rem); /* Adjusted for better alignment */
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 18px;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.tab-button {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: rgb(255, 255, 255); /* Default text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.tab-button:hover {
+    color: #000000;
+}
+
+.tab-button.active {
+    color: rgb(0, 0, 0); /* Text color when slider-bg is behind */
+}
+
+.fcard {
+    display: none;
+    place-items: center;
+    grid-template-rows: 0.2fr 0.7fr 0.2fr;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 95%;
+    max-width: 600px;
+    padding: 2rem;
+    background-color: #f8f9fa00;
+}
+
+.fcard .card-content p {
+    margin: 1rem auto;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.358);
+    padding-bottom: 0.5rem;
+}
+
+.feature-button {
+    background-color: #ffffff00;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feature-button:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.fcard.active {
+    display: grid;
+}

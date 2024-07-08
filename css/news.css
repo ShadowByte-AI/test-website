@@ -1,0 +1,92 @@
+
+.card-container-1{
+    display: flex; /* Use flexbox to align cards horizontally */
+overflow-x: auto; /* Enable horizontal scrolling */
+scroll-snap-type: x mandatory; /* Enable scroll snap in the horizontal direction */
+gap: 1rem; /* Add some space between cards */
+padding: 1rem; /* Add padding if necessary */
+width: 100%; /* Make the container full width */
+box-sizing: border-box; /* Ensure padding is included in the width */
+}
+.news-card{
+    background-image: url(https://t4.ftcdn.net/jpg/05/29/87/37/360_F_529873767_FMwTX8twWRwAI4xtk2X65THeflD7Fp9s.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0rem 1rem 0.5rem;
+    border-radius: 15px;
+    flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+    scroll-snap-align: center; /* Center align cards when snapping */
+}
+.news-card .news-content{
+    position: relative;
+    z-index: 2;
+}
+.news-card .bg-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, #0000009e, #00000000 100%);
+    height: 3rem;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+
+
+.news-highlight{
+    padding: 1rem;
+}
+.news-card-1{
+    background-image: url(https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg);
+background-size: cover;
+height: 200px;
+width: 300px;
+position: relative;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+flex-direction: column;
+padding: 2rem 1rem 1rem;
+border-radius: 15px;
+flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+scroll-snap-align: center; /* Center align cards when snapping */
+}
+.bg-overlay-1{
+    position: absolute;
+top: 0;
+left: 0;
+background: linear-gradient(to bottom, #0000005a, #00000000 100%);
+height: 5rem;
+width: 100%;
+z-index: 1;
+}
+
+.news-content-1{
+    position: relative;
+    z-index: 2;
+}
+
+.more-news-btn a{
+    color: white;
+text-decoration: none;
+padding: 1rem 1rem;
+border-radius: 2rem;
+border: 2px solid white;
+}
+
+.more-news-btn a:hover{
+color: rgb(0, 0, 0);
+background: #ffffff;
+}
+
+
+
+
