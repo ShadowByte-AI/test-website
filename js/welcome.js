@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Check if the welcome screen has already been shown
-    if (getCookie("welcomeShown") === "true") {
-        welcomeWrapper.style.display = 'none';
-    } else {
+    // if (getCookie("welcomeShown") === "true") {
+    //     welcomeWrapper.style.display = 'none';
+    // } else {
         // Show the welcome wrapper
         welcomeWrapper.style.display = 'block';
 
@@ -70,6 +70,12 @@ document.addEventListener("DOMContentLoaded", function() {
            ease: "power2.inOut" 
         });
 
+        tl.to("#sign", {
+            opacity: 0, 
+            duration: 0.5, 
+           ease: "power2.inOut" 
+        });
+
         // Fade out the welcome wrapper
         tl.to(welcomeWrapper, { 
             opacity: 0, 
@@ -80,5 +86,5 @@ document.addEventListener("DOMContentLoaded", function() {
                 setCookie("welcomeShown", "true", 30); // Set cookie to expire in 30 days
             }
         });
-    }
+   // }
 });
