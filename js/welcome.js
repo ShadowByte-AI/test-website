@@ -37,7 +37,22 @@ document.addEventListener("DOMContentLoaded", function() {
         tl.to(welcomeTextSpans, { 
             opacity: 1, 
             stagger: 0.4, 
-            duration: 2, 
+            duration: 1, 
+            ease: "power2.inOut" 
+        });
+
+        tl.to(".welcome-text #first-p", { 
+            x: "100%",
+            opacity: 0, 
+            duration: 1, 
+            ease: "power2.inOut" 
+        });
+
+        tl.to(".welcome-text #second-p", { 
+            x: "-100%",
+            opacity: 0, 
+            duration: 1, 
+            delay: -1,
             ease: "power2.inOut" 
         });
 
@@ -47,6 +62,12 @@ document.addEventListener("DOMContentLoaded", function() {
             opacity: 1, 
             duration: 1, 
             ease: "power2.inOut" 
+        });
+
+        tl.to("#sign", {
+            strokeDashoffset: 0,
+            duration: 6,
+           ease: "power2.inOut" 
         });
 
         // Fade out the welcome wrapper

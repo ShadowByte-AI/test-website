@@ -1,7 +1,8 @@
 .services-wrapper {
     max-width: 900px;
-    margin: 2rem auto;
+    margin: 2rem auto 1rem;
     background:radial-gradient(circle, rgb(28 35 53), #010104);
+    background: radial-gradient(circle at center, rgb(32, 39, 56) 10%, #010104 100%);
     position: relative;
   }
   .glide__slide {
@@ -18,7 +19,7 @@
 
 
 .services-card{
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     position: relative;
     /* background:radial-gradient(circle, rgb(28 35 53), #010104); */
@@ -31,8 +32,50 @@
     z-index: 1;
 }
 
+.lines-container{
+  position: absolute;
+  height: 100vh;
+  left: 50%;
+  top: 0;
+}
+
+.services-wrapper .line-1{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  /* height: 234px; */
+  height: 0;
+  width: 1px;
+  background-color: white;
+  z-index: 3;
+}
+
+.services-wrapper .square-1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 140px;
+  width: 140px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 3;
+  opacity: 0;
+}
+
+.services-wrapper .line-2{
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  /* height:206px; */
+  height:0;
+  width: 1px;
+  background-color: white;
+  z-index: 3;
+}
+
 .services-card .heading h2{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     background-image: radial-gradient(ellipse at top, #c9c9c9, #dcdcdc, #e0e0e0, #fcfcfc, #f9f9f9, #c0c0c0, #c9c9c9);
     background-size: 200% auto;
     color: #000;
@@ -60,30 +103,32 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    z-index: 1;
+    z-index: -1;
 }
 
 .services-card .service-img img{
     object-fit: contain;
-    height: 300px;
-    width: 300px;
+    height: 325px;
+    width: 325px;
 }
 
 .services-card .card-text{
-    width: 50vw;
+    width: 40vw;
     position: absolute;
-    right: 3%;
-    top: 70%;
+    right: 6%;
+    top: 77%;
     z-index: 1;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.795);
 }
 .services-card .card-text p{
-font-size: 0.8rem;
+  font-size: 10px;
 line-height: 1.4;
 }
 
 .services-card .services-button{
     position: absolute;
-    left: 6%;
+    left: 8%;
     top: 88%;
     z-index: 1;
 }

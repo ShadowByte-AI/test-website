@@ -1,0 +1,47 @@
+.tech-stack{
+    width: 100vw;
+    height: 40vh;
+    margin: 2rem auto 5rem;
+  }
+  .tech-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90vw;
+    height: 30vh;
+    background-color: rgb(167 167 167 / 19%);
+    backdrop-filter: blur(5px);
+    color: rgb(255, 255, 255);
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    gap: 0.7rem;
+    border-radius: 10px;
+    /* box-shadow: rgb(255 255 255 / 46%) 0px 1px 1px 0px inset, rgb(0 0 0 / 90%) 0px 50px 100px -20px, rgb(0 0 0) 0px 30px 60px -30px; */
+/* background-image: url('https://www.fffuel.co/images/ffflux/ffflux-12.svg'); */
+  }
+  .tech-card .stack-img{
+    /* width: 100px;
+    height: 100px; */
+  }
+  .tech-card .stack-img img{
+    width: 90px;
+    height: 50px;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+  }
+  .tech-card .stack-text h3{
+  font-size: 0.9rem;
+  line-height: 1.5;
+  }
+  .tech-card .stack-text p{
+font-size: 0.8rem;
+font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+  .swiper{
+    width: 100%;
+    height: 100%;
+  }

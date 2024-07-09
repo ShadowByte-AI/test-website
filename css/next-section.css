@@ -1,0 +1,7 @@
+.next-section-wrapper{
+    /* display: none; */
+    background: radial-gradient(circle at center, rgb(32, 39, 56) 10%, #010104 100%);
+    background: radial-gradient(circle at center, rgb(24, 31, 47) 10%, #010104 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

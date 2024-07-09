@@ -39,7 +39,7 @@ background: transparent;
     position: absolute;
     z-index: 2;
     left: 50%;
-    top: 35%;
+    top: 50%;
     transform: translate(-50%,-50%);
     opacity: 0;
 }
@@ -49,12 +49,25 @@ background: transparent;
     height: 200px;
     width: 200px;
 }
+#sign{
+    stroke-dasharray: 1561;
+    stroke-dashoffset: 1561;
+}
 
+/* .animate-svg {
+    animation: signature 6s ease-in forwards;
+} */
+
+/* @keyframes signature{
+    to{
+        stroke-dashoffset: 0;
+    }
+} */
 .welcome-text{
     position: absolute;
     z-index: 2;
     left: 50%;
-    top: 73%;
+    top: 50%;
     transform: translate(-50%,-50%);
     width: 100vw;
 }
@@ -72,6 +85,7 @@ text-align: center;
     position: relative;
     height: 100vh;
     width: 100vw;   
+    background-color: transparent;
 }
 
 .hero-bg{
@@ -146,6 +160,7 @@ text-align: center;
     letter-spacing: 1px;
     padding: 1rem 1.3rem;
     line-height: 1.75;
+    background-color:transparent;
 }
 
 /* .glow-image-container{

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{
+            background-color: black;
+        }
+    </style>
+    <div class="spline-section"><script type="module" src="https://unpkg.com/@splinetool/viewer@1.8.9/build/spline-viewer.js" async></script>
+        <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/ST6os3ORZioBtnOl/scene.splinecode"></spline-viewer></div>
+
+
+
+        <div class="next-section">
+
+        </div>
+        <style>
+            .spline-section{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: rgb(0, 0, 0);
+                z-index: -1;
+                height: 100vh;
+                width: 100vw;
+            }
+            .next-section{
+                height: 700vh;
+                background-color: transparent;
+            }
+        </style>
+</body>
+</html>

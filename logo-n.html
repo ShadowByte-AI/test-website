@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="welcome-bg">
+        <div class="img">
+            <svg width="201" height="202" viewBox="0 0 201 202" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="sign" d="M41 201L78.7143 162.143V81M41 201V81M41 201L1 162.143V42.1429M41 81H121M41 81L1 42.1429M41 81L78.7143 42.1429M121 81V162.143L161 201M121 81V42.1429M161 201L199.857 159.857V42.1429L161 1M161 201V1M1 42.1429L41 1M41 1H161M41 1L78.7143 42.1429M161 1L121 42.1429M78.7143 42.1429H121" stroke="white"/>
+                </svg>
+            </div>
+    </div>
+<script>
+    p=document.getElementById('sign')
+    console.log(p.getTotalLength())
+</script>
+
+    <!-- <div class="glow-image-container">
+        <div class="section_glow-image-wrapper">
+            <img src="https://cdn.prod.website-files.com/647798cf71ec2048ea89ab07/647826b4bc34f2bd42bd7e5d_header%20bg.png" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/647798cf71ec2048ea89ab07/647826b4bc34f2bd42bd7e5d_header%20bg-p-500.png 500w, https://cdn.prod.website-files.com/647798cf71ec2048ea89ab07/647826b4bc34f2bd42bd7e5d_header%20bg-p-800.png 800w, https://cdn.prod.website-files.com/647798cf71ec2048ea89ab07/647826b4bc34f2bd42bd7e5d_header%20bg-p-1080.png 1080w, https://cdn.prod.website-files.com/647798cf71ec2048ea89ab07/647826b4bc34f2bd42bd7e5d_header%20bg-p-1600.png 1600w, https://cdn.prod.website-files.com/647798cf71ec2048ea89ab07/647826b4bc34f2bd42bd7e5d_header%20bg-p-2000.png 2000w, https://cdn.prod.website-files.com/647798cf71ec2048ea89ab07/647826b4bc34f2bd42bd7e5d_header%20bg.png 2880w" alt="" class="section_glow-image is-align-top-left">
+        </div>
+    </div> -->
+
+
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .welcome-bg{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            display: grid;
+            place-items: center;
+        }
+        #sign{
+            stroke-dasharray: 1561;
+            stroke-dashoffset: 1561;
+            animation: signature 6s ease-in;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes signature{
+            to{
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</body>
+</html>

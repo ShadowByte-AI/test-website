@@ -1,0 +1,41 @@
+
+  .rcx-container{
+height: 85vh;
+width: 100vw;
+display: grid;
+place-items: center;
+  }
+
+  .rcx-card{
+    width:90vw;
+    height: 60vh;
+    background-image: url('https://img.freepik.com/free-photo/vertical-low-angle-shot-buildings-new-york_181624-38456.jpg');
+    background-image: url('../img/rcx-3.jpeg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    background-color: transparent;
+    box-shadow: rgb(0 0 0 / 25%) 0px 50px 100px -20px, rgb(0 0 0) 0px 30px 60px -30px;
+    box-shadow: rgb(255 255 255 / 46%) 0px 1px 1px 0px inset, rgb(0 0 0 / 90%) 0px 50px 100px -20px, rgb(0 0 0) 0px 30px 60px -30px;
+  }
+.rcx-card .rcx-content{
+position: absolute;
+z-index: 2;
+}
+  .rcx-card::after{
+    content: '';
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    aspect-ratio: 1/1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
